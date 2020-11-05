@@ -1,0 +1,55 @@
+plugins {
+    id 'java'
+    id 'war'
+}
+
+group 'com.softvider'
+version '1.0-SNAPSHOT'
+
+war.archiveFileName = "spring-mvc-gradle.war"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //----- junit test -----
+    implementation 'org.junit.jupiter:junit-jupiter:5.4.2'
+
+    //----- Spring -----
+    compile group: 'org.springframework', name: 'spring-context', version: '5.3.0'
+    compile group: 'org.springframework', name: 'spring-context-support', version: '5.3.0'
+    compile group: 'org.springframework', name: 'spring-webmvc', version: '5.3.0'
+
+    //----- Logging -----
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.30'
+    compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.30'
+    compile group: 'org.slf4j', name: 'jcl-over-slf4j', version: '1.7.30'
+
+    //----- Redis -----
+    compile group: 'redis.clients', name: 'jedis', version: '2.7.2'
+
+    //----- Json -----
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.11.3'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.11.3'
+    compile group: 'net.minidev', name: 'json-smart', version: '2.3'
+
+    //----- Cache -----
+    compile group: 'net.sf.ehcache', name: 'ehcache', version: '2.10.6'
+
+    //----- HttpClient ----
+    compile group: 'org.apache.httpcomponents', name: 'httpclient-cache', version: '4.5.13'
+
+    //----- @Inject -----
+    compile group: 'javax.inject', name: 'javax.inject', version: '1'
+
+    //----- Servlet -----
+    compile group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
+
+    //----- Validator -----
+    compile group: 'org.hibernate.validator', name: 'hibernate-validator', version: '6.1.6.Final'
+}
+
+tasks.test{
+    useJUnitPlatform()
+}
