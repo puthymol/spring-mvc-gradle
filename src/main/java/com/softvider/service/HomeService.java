@@ -15,7 +15,7 @@ public class HomeService {
 
     public Map<String, Object> Home() {
         Map<String, Object> jsonString = new HashMap<>();
-        jsonString.put("provider", "Softvider from Gradle");
+        jsonString.put("provider", "Softvider");
         log.info("Response => {} :" +jsonString);
         return jsonString;
     }

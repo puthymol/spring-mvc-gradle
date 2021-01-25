@@ -2,14 +2,15 @@ package com.softvider.test;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import net.minidev.json.JSONObject;
+import com.softvider.test.model.Book;
 import org.junit.jupiter.api.Test;
+import net.minidev.json.JSONObject;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.*;
 
-public class TestJava {
+public class JavaTest {
 
     @Test
     public void ClassToString() {

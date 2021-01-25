@@ -19,7 +19,6 @@ import org.springframework.core.env.Environment;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.http.MediaType;
 import org.springframework.web.servlet.config.annotation.*;
-
 import javax.inject.Inject;
 
 @EnableWebMvc

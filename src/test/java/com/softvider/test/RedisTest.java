@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
-public class TestRedis {
+public class RedisTest {
 
     @Test
     public void testRedis(){
@@ -15,7 +15,7 @@ public class TestRedis {
         config.setTestOnBorrow(false);
         config.setTestOnReturn(false);
 
-        String redisHost = "13.212.112.125";
+        String redisHost = "157.230.246.60";
         int redisPort = 16379;
         String auth = "1234";
         JedisPool pool = new JedisPool(config, redisHost, redisPort, 3000, auth);
