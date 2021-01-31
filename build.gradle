@@ -61,6 +61,11 @@ dependencies {
     compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.1'
     compile group: 'javax.activation', name: 'activation', version: '1.1.1'
     compile group: 'org.glassfish.jaxb', name: 'jaxb-runtime', version: '2.3.0'
+
+    //----- Database -----
+    compile group: 'org.springframework.data', name: 'spring-data-jpa', version: '2.4.3'
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.4.27.Final'
+    compile group: 'org.postgresql', name: 'postgresql', version: '42.2.18'
 }
 
 tasks.test{
