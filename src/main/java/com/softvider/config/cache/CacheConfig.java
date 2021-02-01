@@ -4,7 +4,6 @@ import net.sf.ehcache.Ehcache;
 import org.apache.http.client.cache.HttpCacheStorage;
 import org.apache.http.impl.client.cache.ehcache.EhcacheHttpCacheStorage;
 import org.springframework.cache.CacheManager;
-import org.springframework.cache.annotation.CachingConfigurerSupport;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.cache.ehcache.EhCacheCacheManager;
 import org.springframework.cache.ehcache.EhCacheManagerFactoryBean;
